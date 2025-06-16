@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f8;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color:  #2446c0;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 90%;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #007bff;
+      color: white;
+    }
+a {
+      color: white;
+      
+      font-weight: bold;
+    }
+
+    td a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h1>Employee List</h1>
+  <a href="/add">Add New Employee</a>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Position</th>
+      <th>Salary</th>
+      <th>Department</th>
+      <th>Actions</th>
+    </tr>
+    <% employees.forEach(emp => { %>
+      <tr>
+        <td><%= emp.name %></td>
+        <td><%= emp.email %></td>
+        <td><%= emp.position %></td>
+        <td><%= emp.salary %></td>
+        <td><%= emp.department %></td>
+        <td>
+          <a href="/edit/<%= emp.id %>">Edit</a>
+          <a href="/delete/<%= emp.id %>" onclick="return confirm('Are you sure you want to delete this employee?')">Delete</a>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+  <button onclick="window.location.href='/logout'" style="margin-top: 20px; padding: 10px 20px; background-color: #dc3545; color: white; border: none; border-radius: 8px; cursor: pointer;">Logout</button>
+</body>
+</html>
