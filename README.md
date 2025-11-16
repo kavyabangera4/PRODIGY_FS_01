@@ -1,57 +1,57 @@
-# 🧾 Employee Record Management System
+# 🔐 User Authentication System – Prodigy Infotech Task 01
 
-A simple web-based application to manage employee records using **Node.js**, **Express**, **MySQL**, and **EJS templating**.
-
-## 📌 Features
-
-- Add new employee records  
-- View all employee records  
-- Update employee details  
-- Delete employee records  
-- Clean and user-friendly interface
+It is a simple and secure user authentication system built using **Python**, **Flask**, and **MySQL**, allowing users to register, log in, and access a protected dashboard.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Features
 
-- **Backend:** Node.js, Express.js  
-- **Frontend:** HTML, CSS, EJS  
-- **Database:** MySQL  
-
-
-
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/PRODIGY_FS_02.git
-cd PRODIGY_FS_02
-```
-
-### 2. Install Dependencies
-```bash
-npm install
-```
-
-### 3. Configure MySQL
-
-- Create a database named: `employee_management`
-- Import the SQL File.
-
-
-### 4. Run the Server
-```bash
-node app.js
-```
-
-
-### 5. Open in Browser
-Visit: [http://localhost:3000](http://localhost:3000)
+- 📝 User Registration with name, email, and password
+- 👨‍💻 Protected dashboard for logged-in users
+- 🧹 Logout functionality
+- 📦 Clean UI 
 
 ---
 
+## 🛠️ Tech Stack
 
+- **Backend**: Python, Flask
+- **Database**: MySQL
+- **Templating Engine**: HTML, Tailwind CSS
 
 ---
 
+---
+
+## ⚙️ Installation
+
+Follow these steps to set up the project locally:
+
+1. **Clone the Repository**
+   ```bash
+   git clone  https://github.com/kavyabangera4/PRODIGY_FS_01
+   cd Prodigy_FS_01
+2. **Install Dependencies**
+   ```bash
+   pip install
+3. **Set up MySQL Database**
+   - Start MySQL using XAMPP or any local server.
+   - Create a database (e.g., auth_db)
+   - Import SQL File (users.sql)
+4. **Configure DB Connection**
+5. **Start the Server**
+  ```bash
+  python app.py
+```
+6. **Open your browser and visit**
+   ```bash
+   http://localhost:3000
+   ```
+# ✅ Future Improvements
+   - Add email validation
+   - Use JWT tokens for advanced security
+   - Add password reset functionality
+   - Implement user roles (admin/user)
+
+
+Made with ❤️ by Kavya
